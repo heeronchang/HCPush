@@ -28,6 +28,11 @@
 		6C6AD04E21A3A09900F121E7 /* 5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6C6AD03E21A3A09900F121E7 /* 5.m4a */; };
 		6C6AD05021A3A6D500F121E7 /* daozhang.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6C6AD04F21A3A6D500F121E7 /* daozhang.m4a */; };
 		6C6AD05121A3A6D500F121E7 /* daozhang.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6C6AD04F21A3A6D500F121E7 /* daozhang.m4a */; };
+		6CBACB6721BFA7370024CED5 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBACB6621BFA7370024CED5 /* UserNotifications.framework */; };
+		6CBACB6921BFA7370024CED5 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBACB6821BFA7370024CED5 /* UserNotificationsUI.framework */; };
+		6CBACB6C21BFA7370024CED5 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBACB6B21BFA7370024CED5 /* NotificationViewController.swift */; };
+		6CBACB6F21BFA7370024CED5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CBACB6D21BFA7370024CED5 /* MainInterface.storyboard */; };
+		6CBACB7321BFA7370024CED5 /* HCPushContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CBACB6421BFA7370024CED5 /* HCPushContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6CF44226219ECA2B0098D251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF44225219ECA2B0098D251 /* AppDelegate.swift */; };
 		6CF44228219ECA2B0098D251 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF44227219ECA2B0098D251 /* ViewController.swift */; };
 		6CF4422B219ECA2B0098D251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF44229219ECA2B0098D251 /* Main.storyboard */; };
@@ -43,6 +48,13 @@
 			remoteGlobalIDString = 6C6AD02921A2696D00F121E7;
 			remoteInfo = HCPushServiceExtension;
 		};
+		6CBACB7121BFA7370024CED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF4421A219ECA2B0098D251 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CBACB6321BFA7370024CED5;
+			remoteInfo = HCPushContentExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +65,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				6C6AD03121A2696D00F121E7 /* HCPushServiceExtension.appex in Embed App Extensions */,
+				6CBACB7321BFA7370024CED5 /* HCPushContentExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +88,12 @@
 		6C6AD03D21A3A09900F121E7 /* 3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.m4a; sourceTree = "<group>"; };
 		6C6AD03E21A3A09900F121E7 /* 5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.m4a; sourceTree = "<group>"; };
 		6C6AD04F21A3A6D500F121E7 /* daozhang.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = daozhang.m4a; sourceTree = "<group>"; };
+		6CBACB6421BFA7370024CED5 /* HCPushContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HCPushContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CBACB6621BFA7370024CED5 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		6CBACB6821BFA7370024CED5 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		6CBACB6B21BFA7370024CED5 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		6CBACB6E21BFA7370024CED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6CBACB7021BFA7370024CED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CF44222219ECA2B0098D251 /* HCPush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCPush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF44225219ECA2B0098D251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CF44227219ECA2B0098D251 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +108,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CBACB6121BFA7370024CED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CBACB6921BFA7370024CED5 /* UserNotificationsUI.framework in Frameworks */,
+				6CBACB6721BFA7370024CED5 /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,11 +140,32 @@
 			path = HCPushServiceExtension;
 			sourceTree = "<group>";
 		};
+		6CBACB6521BFA7370024CED5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CBACB6621BFA7370024CED5 /* UserNotifications.framework */,
+				6CBACB6821BFA7370024CED5 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CBACB6A21BFA7370024CED5 /* HCPushContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6CBACB6B21BFA7370024CED5 /* NotificationViewController.swift */,
+				6CBACB6D21BFA7370024CED5 /* MainInterface.storyboard */,
+				6CBACB7021BFA7370024CED5 /* Info.plist */,
+			);
+			path = HCPushContentExtension;
+			sourceTree = "<group>";
+		};
 		6CF44219219ECA2B0098D251 = {
 			isa = PBXGroup;
 			children = (
 				6CF44224219ECA2B0098D251 /* HCPush */,
 				6C6AD02B21A2696D00F121E7 /* HCPushServiceExtension */,
+				6CBACB6A21BFA7370024CED5 /* HCPushContentExtension */,
+				6CBACB6521BFA7370024CED5 /* Frameworks */,
 				6CF44223219ECA2B0098D251 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,6 +175,7 @@
 			children = (
 				6CF44222219ECA2B0098D251 /* HCPush.app */,
 				6C6AD02A21A2696D00F121E7 /* HCPushServiceExtension.appex */,
+				6CBACB6421BFA7370024CED5 /* HCPushContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +224,23 @@
 			productReference = 6C6AD02A21A2696D00F121E7 /* HCPushServiceExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		6CBACB6321BFA7370024CED5 /* HCPushContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CBACB7621BFA7370024CED5 /* Build configuration list for PBXNativeTarget "HCPushContentExtension" */;
+			buildPhases = (
+				6CBACB6021BFA7370024CED5 /* Sources */,
+				6CBACB6121BFA7370024CED5 /* Frameworks */,
+				6CBACB6221BFA7370024CED5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HCPushContentExtension;
+			productName = HCPushContentExtension;
+			productReference = 6CBACB6421BFA7370024CED5 /* HCPushContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		6CF44221219ECA2B0098D251 /* HCPush */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CF44234219ECA2C0098D251 /* Build configuration list for PBXNativeTarget "HCPush" */;
@@ -187,6 +254,7 @@
 			);
 			dependencies = (
 				6C6AD03021A2696D00F121E7 /* PBXTargetDependency */,
+				6CBACB7221BFA7370024CED5 /* PBXTargetDependency */,
 			);
 			name = HCPush;
 			productName = HCPush;
@@ -210,6 +278,9 @@
 								enabled = 1;
 							};
 						};
+					};
+					6CBACB6321BFA7370024CED5 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 					6CF44221219ECA2B0098D251 = {
 						CreatedOnToolsVersion = 10.1;
@@ -239,6 +310,7 @@
 			targets = (
 				6CF44221219ECA2B0098D251 /* HCPush */,
 				6C6AD02921A2696D00F121E7 /* HCPushServiceExtension */,
+				6CBACB6321BFA7370024CED5 /* HCPushContentExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +329,14 @@
 				6C6AD04221A3A09900F121E7 /* 4.m4a in Resources */,
 				6C6AD04C21A3A09900F121E7 /* 3.m4a in Resources */,
 				6C6AD04621A3A09900F121E7 /* 2.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CBACB6221BFA7370024CED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CBACB6F21BFA7370024CED5 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +371,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6CBACB6021BFA7370024CED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CBACB6C21BFA7370024CED5 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CF4421E219ECA2B0098D251 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,9 +396,22 @@
 			target = 6C6AD02921A2696D00F121E7 /* HCPushServiceExtension */;
 			targetProxy = 6C6AD02F21A2696D00F121E7 /* PBXContainerItemProxy */;
 		};
+		6CBACB7221BFA7370024CED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CBACB6321BFA7370024CED5 /* HCPushContentExtension */;
+			targetProxy = 6CBACB7121BFA7370024CED5 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6CBACB6D21BFA7370024CED5 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CBACB6E21BFA7370024CED5 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		6CF44229219ECA2B0098D251 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -369,6 +470,44 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6CBACB7421BFA7370024CED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2M5J5HV6Y7;
+				INFOPLIST_FILE = HCPushContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lansejuli.www.MaintenanceSysService.HCPushContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CBACB7521BFA7370024CED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2M5J5HV6Y7;
+				INFOPLIST_FILE = HCPushContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lansejuli.www.MaintenanceSysService.HCPushContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -538,6 +677,15 @@
 			buildConfigurations = (
 				6C6AD03321A2696D00F121E7 /* Debug */,
 				6C6AD03421A2696D00F121E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CBACB7621BFA7370024CED5 /* Build configuration list for PBXNativeTarget "HCPushContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CBACB7421BFA7370024CED5 /* Debug */,
+				6CBACB7521BFA7370024CED5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
